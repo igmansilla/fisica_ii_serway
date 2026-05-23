@@ -1,0 +1,44 @@
+\documentclass[11pt,spanish,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+% --- Espacio para la resolución de ejercicios ---
+\usepackage{enumitem}
+\newlength{\espacioresolucion}
+\setlength{\espacioresolucion}{5cm} % <--- Modifica este valor (ej. 3cm, 6cm, 8cm) para ajustar el espacio para escribir
+\setlist[enumerate,1]{itemsep=\espacioresolucion, parsep=0.5em, after=\vspace{\espacioresolucion}}
+
+\title{\textbf{Física II - Serway \& Jewett} \\ \Large Colección de Ejercicios Resueltos}
+\author{\textbf{Ignacio}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\part{Termodinámica}
+
+% --- CAPÍTULO 6 ---
+\subimport{termodinamica/capitulo_06/}{capitulo_06.tex}
+
+% --- CAPÍTULO 7 ---
+\subimport{termodinamica/capitulo_07/}{capitulo_07.tex}
+
+% --- CAPÍTULO 8 ---
+\subimport{termodinamica/capitulo_08/}{capitulo_08.tex}
+
+% --- CAPÍTULO 9 ---
+\subimport{termodinamica/capitulo_09/}{capitulo_09.tex}
+
+\end{document}

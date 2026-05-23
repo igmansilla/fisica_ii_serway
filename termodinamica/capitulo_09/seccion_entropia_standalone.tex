@@ -1,0 +1,53 @@
+\documentclass[11pt,spanish,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+% --- Espacio para la resolución de ejercicios ---
+\usepackage{enumitem}
+\newlength{\espacioresolucion}
+\setlength{\espacioresolucion}{5cm} % <--- Modifica este valor (ej. 3cm, 6cm, 8cm) para ajustar el espacio para escribir
+\setlist[enumerate,1]{itemsep=\espacioresolucion, parsep=0.5em, after=\vspace{\espacioresolucion}}
+
+\title{\textbf{Física II - Serway \& Jewett} \\ \Large Secciones de Entropía}
+\author{\textbf{Ignacio}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Compendio: Entropía}
+
+\subsection*{SECCIÓN 9.6 Entropía}
+\begin{enumerate}
+    \setcounter{enumi}{19}
+    \subimport{prob_9_6_20/}{ejercicio.tex}
+    \subimport{prob_9_6_21/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{SECCIÓN 9.7 Entropía en sistemas termodinámicos}
+\begin{enumerate}
+    \setcounter{enumi}{21}
+    \subimport{prob_9_7_22/}{ejercicio.tex}
+    \subimport{prob_9_7_23/}{ejercicio.tex}
+    \subimport{prob_9_7_24/}{ejercicio.tex}
+    \subimport{prob_9_7_25/}{ejercicio.tex}
+    \subimport{prob_9_7_26/}{ejercicio.tex}
+\end{enumerate}
+
+\subsection*{SECCIÓN 9.8 Entropía y la segunda ley}
+\begin{enumerate}
+    \setcounter{enumi}{26}
+    \subimport{prob_9_8_27/}{ejercicio.tex}
+    \subimport{prob_9_8_28/}{ejercicio.tex}
+    \subimport{prob_9_8_29/}{ejercicio.tex}
+\end{enumerate}
+
+\end{document}
