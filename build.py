@@ -12,7 +12,7 @@ targets = {
         "tex_path": os.path.join(base_dir, "main.tex"),
         "working_dir": base_dir,
         "dest_name": "Fisica_II_Completo.pdf",
-        "description": "Libro completo (Capítulos 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 y 13)"
+        "description": "Libro completo (Capítulos 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 y 14)"
     },
     "capitulo_01": {
         "tex_path": os.path.join(base_dir, "mecanica/capitulo_01/capitulo_01_standalone.tex"),
@@ -91,6 +91,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "moderna/capitulo_13"),
         "dest_name": "Capitulo_13_Fisica_Atomica.pdf",
         "description": "Capítulo 13 Standalone (Física atómica)"
+    },
+    "capitulo_14": {
+        "tex_path": os.path.join(base_dir, "moderna/capitulo_14/capitulo_14_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "moderna/capitulo_14"),
+        "dest_name": "Capitulo_14_Fisica_Nuclear.pdf",
+        "description": "Capítulo 14 Standalone (Física nuclear)"
     },
     "entropia": {
         "tex_path": os.path.join(base_dir, "termodinamica/capitulo_09/seccion_entropia_standalone.tex"),

@@ -1,0 +1,12 @@
+\item \textbf{Dinámica de decaimientos radiactivos sucesivos.}
+Considere una cadena donde un núcleo padre decae en un núcleo hijo radiactivo, el cual a su vez decae en un núcleo final estable.
+\begin{enumerate}
+    \item Sea $N_{10}$ la cantidad de núcleos padre a $t = 0$, $N_1(t)$ a tiempo $t$, y $\lambda_1$ su constante de decaimiento. Si a $t = 0$ no hay núcleos hija y su constante es $\lambda_2$, demuestre que el número de núcleos hija $N_2(t)$ satisface:
+    $$ \frac{dN_2}{dt} = \lambda_1 N_1 - \lambda_2 N_2 $$
+    \item Verifique que la solución de esta ecuación es:
+    $$ N_2(t) = \frac{\lambda_1 N_{10}}{\lambda_2 - \lambda_1} \left( e^{-\lambda_1 t} - e^{-\lambda_2 t} \right) $$
+    \item Sabiendo que el $^{218}\text{Po}$ decae a $^{214}\text{Pb}$ ($T_{1/2} = 3.10\text{ min}$) y éste a $^{214}\text{Bi}$ ($T_{1/2} = 26.8\text{ min}$), dibuje conceptualmente el comportamiento de $N_1(t)$ y $N_2(t)$ si $N_{10} = 1000\text{ núcleos}$ para $t$ entre $0$ y $36\text{ min}$.
+    \item Determine analíticamente el tiempo $t_m$ en el cual la cantidad de núcleos hija $^{214}\text{Pb}$ alcanza su valor máximo.
+    \item Deduzca la expresión simbólica para $t_m$ en función de $\lambda_1$ y $\lambda_2$.
+    \item Explique si el valor gráfico coincide con la ecuación simbólica.
+\end{enumerate}
