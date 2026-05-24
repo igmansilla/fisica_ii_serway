@@ -12,7 +12,13 @@ targets = {
         "tex_path": os.path.join(base_dir, "main.tex"),
         "working_dir": base_dir,
         "dest_name": "Fisica_II_Completo.pdf",
-        "description": "Libro completo (Capítulos 6, 7, 8 y 9)"
+        "description": "Libro completo (Capítulos 1, 6, 7, 8 y 9)"
+    },
+    "capitulo_01": {
+        "tex_path": os.path.join(base_dir, "mecanica/capitulo_01/capitulo_01_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mecanica/capitulo_01"),
+        "dest_name": "Capitulo_01_Fisica_y_Medicion.pdf",
+        "description": "Capítulo 1 Standalone (Física y medición)"
     },
     "capitulo_06": {
         "tex_path": os.path.join(base_dir, "termodinamica/capitulo_06/capitulo_06_standalone.tex"),
