@@ -1,0 +1,28 @@
+\documentclass[11pt,spanish,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{geometry}
+\geometry{letterpaper, margin=1in}
+
+% --- Espacio para la resolución de ejercicios ---
+\usepackage{enumitem}
+\newlength{\espacioresolucion}
+\setlength{\espacioresolucion}{5cm} % <--- Modifica este valor (ej. 3cm, 6cm, 8cm) para ajustar el espacio para escribir
+\setlist[enumerate,1]{itemsep=\espacioresolucion, parsep=0.5em, after=\vspace{\espacioresolucion}}
+
+\title{\textbf{Física II - Serway \& Jewett} \\ \Large Capítulo 11: Formación de las imágenes}
+\author{\textbf{Ignacio}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\subimport{./}{capitulo_11.tex}
+
+\end{document}
