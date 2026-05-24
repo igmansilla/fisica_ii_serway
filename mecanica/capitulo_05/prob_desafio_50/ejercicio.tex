@@ -1,0 +1,16 @@
+\item \textbf{PROBLEMA DE DESAFÍO: Expansión en serie de Fourier de una onda cuadrada.}
+En las figuras 17.22a y 17.22b, observe que la amplitud de la onda de la componente para la frecuencia fundamental $f$ es grande, para $3f$ es pequeña, y para $5f$ es más pequeña aún. ¿Cómo sabemos exactamente cuánta amplitud asignar a cada componente de frecuencia para construir una onda cuadrada? Este problema nos ayuda a encontrar la respuesta a esa pregunta.
+
+Sea que la onda cuadrada de la figura 17.22c tenga una amplitud $A$ y en $t = 0$ está en el extremo izquierdo de la figura. Entonces, un periodo $T$ de la onda cuadrada está descrito por
+$$ y(t) = \begin{cases} A & \text{para } 0 < t < T/2 \\ -A & \text{para } T/2 < t < T \end{cases} $$
+Exprese la ecuación 17.14 con frecuencias angulares:
+$$ y(t) = \sum_{n=1}^\infty \left[ A_n \sin(n\omega t) + B_n \cos(n\omega t) \right] $$
+Ahora procedemos como sigue:
+\begin{enumerate}
+    \item Multiplique ambos lados de la ecuación anterior por $\sin(m\omega t)$ e integre ambos lados sobre un periodo $T$. Demuestre que el lado izquierdo de la ecuación resultante es igual a 0 si $m$ es par y es igual a $4A/m\omega$ si $m$ es impar.
+    \item Utilizando identidades trigonométricas y propiedades de ortogonalidad, demuestre que todos los términos del lado derecho que contienen a $B_n$ son iguales a cero.
+    \item Demuestre que todos los términos del lado derecho que tienen a $A_n$ son iguales a cero, excepto en el caso en que $m = n$.
+    \item Demuestre que todo el lado derecho de la ecuación se reduce a $\frac{1}{2} A_n T$.
+    \item Demuestre que la expansión de la serie de Fourier de una onda cuadrada es:
+    $$ y(t) = \sum_{n=1, 3, 5, \dots}^\infty \frac{4A}{n\pi} \sin(n\omega t) $$
+\end{enumerate}
