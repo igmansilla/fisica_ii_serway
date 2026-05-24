@@ -12,7 +12,7 @@ targets = {
         "tex_path": os.path.join(base_dir, "main.tex"),
         "working_dir": base_dir,
         "dest_name": "Fisica_II_Completo.pdf",
-        "description": "Libro completo (Capítulos 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 y 11)"
+        "description": "Libro completo (Capítulos 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 y 12)"
     },
     "capitulo_01": {
         "tex_path": os.path.join(base_dir, "mecanica/capitulo_01/capitulo_01_standalone.tex"),
@@ -79,6 +79,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "optica/capitulo_11"),
         "dest_name": "Capitulo_11_Formacion_de_las_Imagenes.pdf",
         "description": "Capítulo 11 Standalone (Formación de las imágenes)"
+    },
+    "capitulo_12": {
+        "tex_path": os.path.join(base_dir, "optica/capitulo_12/capitulo_12_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "optica/capitulo_12"),
+        "dest_name": "Capitulo_12_Optica_Ondulatoria.pdf",
+        "description": "Capítulo 12 Standalone (Óptica ondulatoria)"
     },
     "entropia": {
         "tex_path": os.path.join(base_dir, "termodinamica/capitulo_09/seccion_entropia_standalone.tex"),
