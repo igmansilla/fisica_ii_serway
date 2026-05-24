@@ -1,5 +1,33 @@
 \item \textbf{Índices de refracción de tres láminas de plástico.}
 Analice la siguiente situación en su grupo: Tres láminas de plástico tienen índices de refracción desconocidos. Se colocan una sobre la otra de dos en dos y se dirige un rayo láser a las hojas desde arriba. En los tres casos, el rayo láser se ajusta de modo que golpee la interfaz entre la lámina superior y la inferior (no entre el aire y la lámina superior) en un ángulo de $26.5^\circ$ con la normal.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1, >=stealth, thick]
+    % Láminas apiladas
+    \draw[fill=blue!5!white, draw=blue!40!black] (0, 1.5) rectangle (6, 3) node[midway, right=1.6cm] {Lámina Superior ($n_a$)};
+    \draw[fill=green!5!white, draw=green!40!black] (0, 0) rectangle (6, 1.5) node[midway, right=1.6cm] {Lámina Inferior ($n_b$)};
+    
+    % Línea Normal
+    \draw[dashed, gray] (3, -0.5) -- (3, 3.5) node[above] {Normal};
+    
+    % Rayo láser incidente a 26.5 grados con la normal
+    \draw[->, ultra thick, red] (2, 3.5) -- (3, 1.5);
+    \node[red, left] at (2.4, 2.7) {Haz Láser};
+    
+    % Rayo refractado
+    \draw[->, ultra thick, red] (3, 1.5) -- (3.9, 0);
+    
+    % Ángulos marcados
+    \draw[red!60!black, thick] (3, 2.1) arc (90:116.5:0.6);
+    \node[red!60!black] at (2.7, 2.35) {\footnotesize $26.5^\circ$};
+    
+    \draw[red!60!black, thick] (3, 0.9) arc (270:298:0.6);
+    \node[red!60!black] at (3.4, 0.65) {\footnotesize $\theta_{\text{ref}}$};
+    
+    % Leyenda de interfaz
+    \node at (0.3, 1.65) [right] {\scriptsize Interfaz de contacto};
+\end{tikzpicture}
+\end{center}
 \begin{enumerate}[label=(\roman*)]
     \item La hoja 1 se coloca encima de la hoja 2. El haz refractado dentro de la hoja 2 forma un ángulo de $31.7^\circ$ con la normal.
     \item La lámina 3 se coloca encima de la lámina 2. El haz refractado dentro de la lámina 2 forma un ángulo de $36.7^\circ$ con la normal.

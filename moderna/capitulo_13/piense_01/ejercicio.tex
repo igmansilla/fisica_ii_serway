@@ -1,5 +1,32 @@
 \item \textbf{Diseño de un láser de helio-neón verde.}
 Está trabajando en un proyecto de último año con un grupo de sus compañeros, diseñando un láser de helio-neón que produce un rayo láser verde en lugar de uno rojo. La figura TP41.1 muestra las transiciones involucradas para formar el rayo rojo y el rayo verde. Después de que se establece una inversión de población, los átomos de neón realizan una variedad de transiciones descendentes al caer desde el estado etiquetado $E_4^*$ hacia abajo hasta el nivel $E_1$ (arbitrariamente asignada a la energía $E_1 = 0$). Los átomos emiten luz roja con una longitud de onda de $632.8\text{ nm}$ en una transición $E_4^* - E_3$ y luz verde con una longitud de onda de $543.0\text{ nm}$ en una transición competitiva $E_4^* - E_2$. Para construir su láser, necesita determinar lo siguiente:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9, >=stealth, thick]
+    % Eje de Energía
+    \draw[->, ultra thick, black] (-0.8, -0.5) -- (-0.8, 6.2) node[above] {Energía};
+    
+    % Niveles de energía
+    \draw[ultra thick, black] (0,0) -- (6,0) node[right] {$E_1 = 0$ (Estado fundamental)};
+    \draw[ultra thick, blue!60!black] (0,2.5) -- (6,2.5) node[right] {$E_2$ (Verde)};
+    \draw[ultra thick, red!60!black] (0,3.8) -- (6,3.8) node[right] {$E_3$ (Rojo)};
+    \draw[ultra thick, orange!80!black] (0,5.5) -- (6,5.5) node[right] {$E_4^*$ (Metastable)};
+
+    % Transiciones
+    % Verde E4* -> E2 (543.0 nm)
+    \draw[->, ultra thick, green!70!black] (2, 5.5) -- (2, 2.5);
+    \node[green!60!black, left] at (2, 4) {$\lambda = 543.0\text{ nm}$};
+    \node[green!60!black, right] at (2, 4.3) {Verde (competitivo)};
+
+    % Rojo E4* -> E3 (632.8 nm)
+    \draw[->, ultra thick, red] (4, 5.5) -- (4, 3.8);
+    \node[red, right] at (4, 4.65) {$\lambda = 632.8\text{ nm}$ (Rojo)};
+
+    % Transición posterior E2 -> E1
+    \draw[->, dashed, gray, ultra thick] (3, 2.5) -- (3, 0);
+    \node[gray, right] at (3, 1.25) {$E_2 - E_1$};
+\end{tikzpicture}
+\end{center}
 \begin{enumerate}
     \item Una de las transiciones posteriores que ocurrirá es $E_2 - E_1$. Determine la longitud de onda de esta transición para su informe final.
     \item Los átomos en su láser están en una cavidad entre los espejos diseñados para reflejar la luz verde con alta eficiencia pero permiten que la luz roja se filtre de la cavidad. Entonces la emisión estimulada puede conducir a la acumulación de un haz colimado de luz verde entre los espejos que tiene una intensidad mayor que la de la luz roja. Los espejos que forman la cavidad resonante pueden estar hechos de capas de dióxido de silicio (índice de refracción $n = 1.458$) y dióxido de titanio (el índice de refracción varía entre $1.9$ y $2.6$). Es necesario determinar el espesor de una capa de dióxido de silicio, entre las capas de dióxido de titanio, que minimizaría el reflejo de la luz roja y maximizaría el reflejo de la luz verde.
