@@ -12,7 +12,7 @@ targets = {
         "tex_path": os.path.join(base_dir, "main.tex"),
         "working_dir": base_dir,
         "dest_name": "Fisica_II_Completo.pdf",
-        "description": "Libro completo (Capítulos 1, 2, 6, 7, 8 y 9)"
+        "description": "Libro completo (Capítulos 1, 2, 3, 6, 7, 8 y 9)"
     },
     "capitulo_01": {
         "tex_path": os.path.join(base_dir, "mecanica/capitulo_01/capitulo_01_standalone.tex"),
@@ -25,6 +25,12 @@ targets = {
         "working_dir": os.path.join(base_dir, "mecanica/capitulo_02"),
         "dest_name": "Capitulo_02_Mecanica_de_Fluidos.pdf",
         "description": "Capítulo 2 Standalone (Mecánica de fluidos)"
+    },
+    "capitulo_03": {
+        "tex_path": os.path.join(base_dir, "mecanica/capitulo_03/capitulo_03_standalone.tex"),
+        "working_dir": os.path.join(base_dir, "mecanica/capitulo_03"),
+        "dest_name": "Capitulo_03_Movimiento_Ondulatorio.pdf",
+        "description": "Capítulo 3 Standalone (Movimiento ondulatorio)"
     },
     "capitulo_06": {
         "tex_path": os.path.join(base_dir, "termodinamica/capitulo_06/capitulo_06_standalone.tex"),
